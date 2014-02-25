@@ -1,0 +1,10 @@
+-- 15/08/2013 03:42:23 PM VET
+-- I forgot to set the DICTIONARY_ID_COMMENTS System Configurator
+CREATE TABLE T_Conciliation (AD_Client_ID NUMBER(10) NOT NULL, AD_Org_ID NUMBER(10) NOT NULL, AD_PInstance_ID NUMBER(10) DEFAULT NULL , AmountNotReconciled NUMBER(10) DEFAULT NULL , C_BankAccount_ID NUMBER(10) DEFAULT NULL , C_BankStatement_ID NUMBER(10) DEFAULT NULL , Created DATE NOT NULL, CreatedBy NUMBER(10) NOT NULL, IsActive CHAR(1) DEFAULT 'Y' CHECK (IsActive IN ('Y','N')) NOT NULL, T_Conciliation_ID NUMBER(10) NOT NULL, Updated DATE NOT NULL, UpdatedBy NUMBER(10) NOT NULL, CONSTRAINT T_Conciliation_Key PRIMARY KEY (T_Conciliation_ID))
+;
+
+-- 15/08/2013 03:42:41 PM VET
+-- I forgot to set the DICTIONARY_ID_COMMENTS System Configurator
+CREATE TABLE T_Conciliationline (AD_Client_ID NUMBER(10) NOT NULL, AD_Org_ID NUMBER(10) NOT NULL, AD_PInstance_ID NUMBER(10) DEFAULT NULL , C_BankStatementLine_ID NUMBER(10) DEFAULT NULL , C_Charge_ID NUMBER(10) DEFAULT NULL , ChargeAmt NUMBER DEFAULT NULL , C_Payment_ID NUMBER(10) DEFAULT NULL , Created DATE NOT NULL, CreatedBy NUMBER(10) NOT NULL, IsActive CHAR(1) DEFAULT 'Y' CHECK (IsActive IN ('Y','N')) NOT NULL, IsManual CHAR(1) DEFAULT NULL  CHECK (IsManual IN ('Y','N')), IsReconciled CHAR(1) DEFAULT NULL  CHECK (IsReconciled IN ('Y','N')), StatementDate DATE DEFAULT NULL , StmtAmt NUMBER DEFAULT NULL , T_Conciliationline_ID NUMBER(10) NOT NULL, TenderType CHAR(1) DEFAULT NULL  CHECK (TenderType IN ('Y','N')), TrxAmt NUMBER DEFAULT NULL , Updated DATE NOT NULL, UpdatedBy NUMBER(10) NOT NULL, CONSTRAINT T_Conciliationline_Key PRIMARY KEY (T_Conciliationline_ID))
+;
+

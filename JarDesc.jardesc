@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="LVE-EFT_OC/packages/LVE-EFT_OC/lib/LVE-EFT_OC.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/LVE-EFT_OC/JarDesc.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/LVE-EFT_OC/LVE-EFT_OC.launch"/>
+        <file path="/LVE-EFT_OC/.teeproject"/>
+        <file path="/LVE-EFT_OC/.project"/>
+        <javaElement handleIdentifier="=LVE-EFT_OC/patches"/>
+        <file path="/LVE-EFT_OC/JarDesc.jardesc"/>
+        <javaElement handleIdentifier="=LVE-EFT_OC/base"/>
+        <file path="/LVE-EFT_OC/.classpath"/>
+        <file path="/LVE-EFT_OC/GenerateModelLVE_EFT.launch"/>
+    </selectedElements>
+</jardesc>

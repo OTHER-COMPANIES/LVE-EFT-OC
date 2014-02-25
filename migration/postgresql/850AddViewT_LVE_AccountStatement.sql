@@ -1,0 +1,25 @@
+﻿CREATE TABLE T_LVE_AccountStatement
+(
+  ad_client_id numeric(10,0) DEFAULT NULL::numeric,
+  ad_org_id numeric(10,0) NOT NULL,
+  ad_pinstance_id numeric(10,0) DEFAULT NULL::numeric,
+  c_bp_group_id numeric(10,0) DEFAULT NULL::numeric,
+  c_bpartner_id numeric(10,0) DEFAULT NULL::numeric,
+  c_cash_id numeric(10,0) DEFAULT NULL::numeric,
+  c_cashline_id numeric(10,0) DEFAULT NULL::numeric,
+  c_invoice_id numeric(10,0) DEFAULT NULL::numeric,
+  c_payment_id numeric(10,0) DEFAULT NULL::numeric,
+  credit numeric,
+  creditmemo_id numeric(10,0) DEFAULT NULL::numeric,
+  debit numeric,
+  documentdate timestamp without time zone,
+  documentno character varying(25) DEFAULT NULL::character varying,
+  issotrx character(1) DEFAULT NULL::bpchar,
+  seqno numeric,
+  seqno1 numeric,
+  balance numeric,
+  linealbalance numeric,
+  docbasetype character varying(3) DEFAULT NULL::character varying,
+  c_bpartner_location_id numeric(10,0) DEFAULT NULL::numeric,
+  CONSTRAINT T_LVE_AccountStatement_Issotrx_check CHECK (issotrx = ANY (ARRAY['Y'::bpchar, 'N'::bpchar]))
+);
